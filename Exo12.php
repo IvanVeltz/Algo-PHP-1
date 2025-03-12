@@ -35,5 +35,5 @@ $tableau = [
 ksort($tableau);
 
 foreach($tableau as $prenom => $langue){
-    echor bonjour($prenom, $langue)."\n";
+    echo bonjour($prenom, $langue)."\n";
 }
