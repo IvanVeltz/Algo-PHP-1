@@ -11,13 +11,13 @@ function palindrome($phrase) {
 
     // Comparer $phrTest avec son inverse
     if ($phrTest == strrev($phrTest)) {
-        echo 'La phrase "'.$phrase.'" est un palidrome"'; 
+        return "La phrase « $phrase » est un palindrome"; 
     } else {
-        echo 'La phrase "'.$phrase.'" n\'est un palidrome"';
+        return "La phrase « $phrase » n'est un palindrome";
     }
 
 }
 
 $phrase = 'Engage le jeu que je le gagne';
 
-palindrome($phrase);
+echo palindrome($phrase);
