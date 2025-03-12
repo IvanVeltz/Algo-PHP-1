@@ -9,4 +9,4 @@ contenus dans celle-ci.</p>
 
 $phrase = "Notre formation DL commence aujourd'hui";
 
-echo "La phrase « Notre formation DL commence aujourd’hui » contient ".$str_word_count($phrase)." mots.";
+echo "La phrase « Notre formation DL commence aujourd’hui » contient ".str_word_count($phrase)." mots.";
