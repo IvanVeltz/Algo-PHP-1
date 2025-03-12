@@ -37,3 +37,13 @@ ksort($tableau);
 foreach($tableau as $prenom => $langue){
     echo bonjour($prenom, $langue)."\n";
 }
+
+// Deuxieme solution avec deux tableaux associatifs
+
+$salutations = ["FRA" => "Salut", "ENG" => "Hello", "ESP" => "Hola"];
+
+foreach($tableau as $prenom => $langue){
+    if (array_key_exists($langue, $salutations)){
+        echo $salutations[$langue]." $prenom\n";
+    }
+}
