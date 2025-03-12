@@ -10,11 +10,15 @@ plus de 20 ans, alors celle-ci est imposable (sinon ce n’est pas le cas, « no
 <?php
 
 function imposable($age, $sexe){
-    if ($sexe == "F" && 18 <= $age && $age < 35 || $sexe == "H" && $age > 20){
-        return "La personne est imposable";
-    } else{
-        return "La personne est non imposable";
-    }
+ 
+    $condition1 = $sexe == "F" && 18 <= $age && $age <= 35;
+    $condition2 =  $sexe == "H" && $age > 20;
+    
+       if ($condition1 || $condition2) {
+           return "La personne est imposable";
+       } else{
+           return "La personne est non imposable";
+       }
 }
 
 $age = 32;
