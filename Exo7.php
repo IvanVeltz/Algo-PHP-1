@@ -13,7 +13,7 @@ Si la catégorie n’est pas gérée, merci de le préciser</p>
 
 function categorie($age){
     if(gettype($age) == "integer"){
-        switch($age){
+        switch($true){
             case(6 <= $age && $age <= 7): 
                 return "L'enfant qui a $age ans appartient à la catégorie « Poussin »";
                 break;
