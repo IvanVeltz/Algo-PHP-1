@@ -22,7 +22,6 @@ function rendreMonnaie($apayer, $verse){
         $arendre = $arendre - 2 * $deux;
         return "$dix billets de 10 € - $cinq billet de 5€ - $deux pièce de 2€ - $arendre pièce de 1 €";
     }
-    
 }
 
 $apayer = 152;
