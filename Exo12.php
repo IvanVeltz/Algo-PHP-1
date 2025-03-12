@@ -29,7 +29,7 @@ function bonjour($prenom, $langue){
 $tableau = [
     "Mickael" => "FRA",
     "Virgile" => "ESP",
-    "Maric-Claire" => "ENG"
+    "Maric-Claire" => "ENF"
 ];
 
 ksort($tableau);
@@ -45,5 +45,7 @@ $salutations = ["FRA" => "Salut", "ENG" => "Hello", "ESP" => "Hola"];
 foreach($tableau as $prenom => $langue){
     if (array_key_exists($langue, $salutations)){
         echo $salutations[$langue]." $prenom\n";
+    } else {
+        echo "Langue non reconnue";
     }
 }
