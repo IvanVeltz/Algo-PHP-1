@@ -13,3 +13,10 @@ echo "Table de $nombre :<br>";
 for ($i = 1; $i <= 10;$i++){
     echo "$i * $nombre = ".$i*$nombre."<br>";
 }
+
+echo "Table de $nombre :<br>";
+$i = 1;
+while ($i <= 10) {
+    echo "$i * $nombre = ".$i*$nombre."<br>";
+    $i++;
+}
