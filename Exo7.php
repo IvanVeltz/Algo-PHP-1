@@ -15,13 +15,13 @@ function categorie($age){
     if(gettype($age) == "integer"){
         switch(true){
             case(12 <= $age): 
-                return "L'enfant qui a $age ans appartient à la catégorie « Poussin »";
+                return "L'enfant qui a $age ans appartient à la catégorie « Cadet »";
                 break;
             case(10 <= $age): 
-                return "L'enfant qui a $age ans appartient à la catégorie « Poussin »";
+                return "L'enfant qui a $age ans appartient à la catégorie « Minime »";
                 break;
             case(8 <= $age): 
-                return "L'enfant qui a $age ans appartient à la catégorie « Poussin »";
+                return "L'enfant qui a $age ans appartient à la catégorie « Pupille »";
                 break;
             case(6 <= $age): 
                 return "L'enfant qui a $age ans appartient à la catégorie « Poussin »";
