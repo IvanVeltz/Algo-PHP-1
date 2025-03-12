@@ -1,4 +1,4 @@
-<h1>Exercice 3</h1>
+<h1>Exercice 4</h1>
 
 <p>Ecrire un algorithme permettant de savoir si une phrase est palindrome.</p>
 
@@ -20,4 +20,4 @@ function palindrome($phrase) {
 
 $phrase = 'Engage le jeu que je le gagne';
 
-echo palindrome($phrase);
+palindrome($phrase);
