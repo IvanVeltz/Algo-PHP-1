@@ -33,6 +33,7 @@ $tableau = [
 ];
 
 ksort($tableau);
+// ksort tri un tableau associatif selon la clé, ksort pour un tir inversé, asort et arsort pour un tri selon les valeurs
 
 foreach($tableau as $prenom => $langue){
     echo bonjour($prenom, $langue)."\n";
@@ -44,6 +45,7 @@ $salutations = ["FRA" => "Salut", "ENG" => "Hello", "ESP" => "Hola"];
 
 foreach($tableau as $prenom => $langue){
     if (array_key_exists($langue, $salutations)){
+        // array_key_exists permet de savoir si la clé en premier argument existe dans le tableau du deuxieme argument
         echo $salutations[$langue]." $prenom\n";
     } else {
         echo "Langue non reconnue";

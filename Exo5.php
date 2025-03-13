@@ -7,10 +7,12 @@ Attention, la valeur générée devra être arrondie à 2 décimales.</p>
 
 <?php
 
-$franc = 10;
+$montantFranc = 10;
 
+// Converti un montant en franc en euro à deux decimal
 function convertFrEuro($fr){
     return round($fr * 6.55957,2);
+    // round permet d'arrondir à deux décimal
 }
 
-echo convertFrEuro($franc);
+echo convertFrEuro($montantFranc);

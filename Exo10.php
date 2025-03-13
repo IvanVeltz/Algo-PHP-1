@@ -9,27 +9,29 @@ plus de 20 ans, alors celle-ci est imposable (sinon ce n’est pas le cas, « no
 
 <?php
 
-function rendreMonnaie($apayer, $verse){
-    if ($verse < $apayer){
-        return "Il manque ".$apayer-$verse." €";
+// Retourne le nombre de billet/pièces de 10, 5, 2 et 1 € selon le montant à payer, et le montant versé
+function rendreMonnaie($aPayer, $verse){
+    if ($verse < $aPayer){
+        return "Il manque ".$aPayer-$verse." €";
     } else {
-        $arendre = $verse - $apayer;
-        $dix = intdiv($arendre,10);
-        $arendre = $arendre - 10 *$dix;
-        $cinq = intdiv($arendre,5);
-        $arendre = $arendre - 5 * $cinq;
-        $deux = intdiv($arendre,2);
-        $arendre = $arendre - 2 * $deux;
-        return "$dix billets de 10 € - $cinq billet de 5€ - $deux pièce de 2€ - $arendre pièce de 1 €";
+        $aRendre = $verse - $aPayer;
+        $dix = intdiv($aRendre,10);
+        // intdiv permet de garder la partie entiere d'une division
+        $aRendre = $aRendre - 10 *$dix;
+        $cinq = intdiv($aRendre,5);
+        $aRendre = $aRendre - 5 * $cinq;
+        $deux = intdiv($aRendre,2);
+        $aRendre = $aRendre - 2 * $deux;
+        return "$dix billets de 10 € - $cinq billet de 5€ - $deux pièce de 2€ - $aRendre pièce de 1 €";
     }
 }
 
-$apayer = 152;
+$aPayer = 152;
 $verse = 200;
 
-echo "Montant à payer : $apayer €<br>";
+echo "Montant à payer : $aPayer €<br>";
 echo "Montant versé : $verse €<br>";
-echo "Reste à payer : ".$verse - $apayer." €<br>";
+echo "Reste à payer : ".$verse - $aPayer." €<br>";
 echo "**********************<br>";
 echo "Rendu de monnaie :<br>";
-echo  rendreMonnaie($apayer,$verse);
+echo  rendreMonnaie($aPayer,$verse);

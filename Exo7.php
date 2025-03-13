@@ -11,6 +11,7 @@ Si la catégorie n’est pas gérée, merci de le préciser</p>
 
 <?php
 
+// Retourne l'age et la categorie suivant l'age d'une personne, retourne un messaged d'erreur si l'age n'est pas un entier
 function categorie($age){
     if(gettype($age) == "integer"){
         switch(true){

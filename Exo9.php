@@ -9,6 +9,7 @@ plus de 20 ans, alors celle-ci est imposable (sinon ce n’est pas le cas, « no
 
 <?php
 
+// Retourne si une personne est imposable selon les critères souhaités
 function imposable($age, $sexe){
  
     $condition1 = $sexe == "F" && 18 <= $age && $age <= 35;

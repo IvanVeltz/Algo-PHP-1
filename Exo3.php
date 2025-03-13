@@ -10,8 +10,9 @@
 
 $phrase = "Notre formation DL commence aujourd'hui";
 
-$NouvPhrase = str_replace("aujourd'hui","demain",$phrase);
+$nouvPhrase = str_replace("aujourd'hui","demain",$phrase);
+// str_replace permet de remplacer le premier argument, par le deuxieme, dans le troisieme.
 
 echo $phrase."<br>";
 
-echo $NouvPhrase;
+echo $nouvPhrase;
